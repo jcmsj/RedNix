@@ -371,8 +371,8 @@
       openvpn
       samba
       step-cli
-      tigervnc
-      tightvnc
+      tigervnc 
+      #tightvnc # Has a CVE
       wireguard-go
       wireguard-tools
       xrdp
