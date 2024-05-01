@@ -327,6 +327,9 @@
     ];
 
     passwords = with pkgs; [
+      (wordlists.override {
+        lists = [ rockyou ];
+      })
       badtouch
       authoscope
       bruteforce-luks
@@ -371,7 +374,7 @@
       openvpn
       samba
       step-cli
-      tigervnc 
+      tigervnc
       #tightvnc # Has a CVE
       wireguard-go
       wireguard-tools
@@ -403,7 +406,7 @@
       cutter
       rizin
       stacks
-      unicorn 
+      unicorn
       valgrind
       volatility3
       xortool
@@ -447,7 +450,7 @@
       snmpcheck
     ];
 
-    sql = with pkgs; [sqlmap];
+    sql = with pkgs; [ sqlmap ];
 
     ssh = with pkgs; [
       sshchecker
@@ -641,4 +644,4 @@
     ];
   };
 in
-  packages
+packages
