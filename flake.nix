@@ -38,7 +38,7 @@
       inherit (nixpkgs.lib) attrValues flatten listToAttrs nameValuePair;
       packages = flatten (attrValues (import ./packages.nix {
         pkgs = pkgs.${system};
-        hackpkgs = 
+        #hackpkgs = 
         inherit inputs;
       }));
     in
