@@ -83,7 +83,7 @@
     forensics = with pkgs; [
       afflib
       amoco
-      inputs.chainsaw.packages.${pkgs.stdenv.hostPlatform.system}.chainsaw
+      #inputs.chainsaw.packages.${pkgs.stdenv.hostPlatform.system}.chainsaw
       dcfldd
       ddrescue
       ddrescueview
