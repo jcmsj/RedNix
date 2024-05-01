@@ -11,7 +11,7 @@
       snowcrash
     ];
 
-    applePrincessPackages = pkgs.lib.mapAttrsToList (_: v: v) inputs.hackpkgs.packages.${pkgs.system};
+    #applePrincessPackages = pkgs.lib.mapAttrsToList (_: v: v) inputs.hackpkgs.packages.${pkgs.system};
 
     archive-tools = with pkgs; [
       cabextract
@@ -114,7 +114,6 @@
     ];
 
     fuzzers = with pkgs; [
-      afl
       aflplusplus
       feroxbuster
       ffuf
@@ -160,7 +159,7 @@
       xh
       python3
       firefox-bin
-      exa
+      eza
       bat
       fd
       procs
